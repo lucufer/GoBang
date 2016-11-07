@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gobang" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="rGO-yh-tU6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ8-7P-TkW">
+                                <rect key="frame" x="62" y="552" width="53" height="40"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="regret:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NbQ-GZ-J4M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOF-Dm-uiG">
+                                <rect key="frame" x="244" y="551" width="53" height="40"/>
+                                <state key="normal" title="Button" image="refresh"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYB-50-h2Q"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="MOX-eb-zWS">
+                                <rect key="frame" x="100" y="43" width="175" height="83"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="屏幕快照 2016-08-19 下午2.20.21" translatesAutoresizingMaskIntoConstraints="NO" id="NCO-vl-q1l">
+                                <rect key="frame" x="23" y="170" width="328" height="328"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="328" id="ETh-3R-ILg"/>
+                                    <constraint firstAttribute="width" constant="328" id="Qdy-qE-usc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rGO-yh-tU6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IHM-Xg-NhW"/>
+                            <constraint firstItem="rGO-yh-tU6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OFd-j4-vZg"/>
+                            <constraint firstAttribute="trailing" secondItem="rGO-yh-tU6" secondAttribute="trailing" id="SFf-eF-W0X"/>
+                            <constraint firstAttribute="bottom" secondItem="rGO-yh-tU6" secondAttribute="bottom" id="Vxh-aj-6g9"/>
+                            <constraint firstItem="NCO-vl-q1l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jFi-VM-yi6"/>
+                            <constraint firstItem="NCO-vl-q1l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wk3-aj-BER"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="399.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="64" height="64"/>
+        <image name="background" width="145" height="133"/>
+        <image name="refresh" width="64" height="64"/>
+        <image name="title" width="178" height="87"/>
+        <image name="屏幕快照 2016-08-19 下午2.20.21" width="101" height="90"/>
+    </resources>
+</document>
